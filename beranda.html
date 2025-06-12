@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda - Hijab Izzyra</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header><h1>Hijab Izzyra</h1></header>
+  <nav>
+    <ul>
+      <li><a href="beranda.html">Beranda</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="tentang.html">Tentang Kami</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="card">
+      <h2>Selamat Datang di Hijab Izzyra</h2>
+      <p>selamat welcome you kamu can bisa rowrr. jangan pernah lupa tutup auratnya yah cantikk  ◕‿◕.</p>
+      <div class="slideshow-container">
+        <img src="hijab.png"  alt=""/>
+      </div>
+    </section>
+    <section class="card tips">
+      <h3>Tips Berhijab</h3>
+      <ul>
+        <li>Pilih bahan yang adem dan nyaman.</li>
+        <li>Gunakan inner agar hijab tidak mudah bergeser.</li>
+        <li>Padukan warna hijab dengan outfit.</li>
+      </ul>
+    </section>
+  </main>
+  <a href="https://wa.me/6282148170521" class="wa-button" target="_blank" title="Chat via WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+  </a>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const slide = document.querySelector(".slide");
+      const images = [
+        "https://source.unsplash.com/800x400/?hijab,fashion,1",
+        "https://source.unsplash.com/800x400/?hijab,fashion,2",
+        "https://source.unsplash.com/800x400/?hijab,fashion,3"
+      ];
+      let current = 0;
+      setInterval(() => {
+        current = (current + 1) % images.length;
+        slide.src = images[current];
+      }, 3000);
+    });
+  </script>
+  <footer><p>&copy; 2025 Hijab Izzyra. Y & J.</p></footer> 
+</body>
+</html>

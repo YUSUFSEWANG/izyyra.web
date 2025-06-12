@@ -1,0 +1,68 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+header {
+  background-color: #b5838d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background: #b5839c;
+  list-style: none;
+}
+nav li {
+  margin: 0 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.card {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff0f6;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  padding: 0.5;
+  background: #b58399;
+  color: white;
+  margin-top: 1rem;
+}
+.produk-container {
+  display: flex;
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+.produk-card {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+}
+.produk-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.wa-button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+}
+.wa-button img {
+  width: 100%;
+}
